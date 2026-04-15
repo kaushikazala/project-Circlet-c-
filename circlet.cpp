@@ -73,3 +73,89 @@ int main() {
 
 --Q5.
 
+
+   #include <iostream>
+
+using namespace std;
+
+int main() {
+    // Write C++ code here
+   int n = 5;
+
+    for (int i = n; i >= 1; i--) {
+
+        for (int j = 1; j <= i - 1; j++) {
+            cout << "  ";
+        }
+
+        for (int k = i; k <= n; k++) {
+            cout << k << " ";
+        }
+
+        for (int h = n - 1; h >= i; h--) {
+            cout << h << " ";
+        }
+
+        cout << endl;
+    }
+    return 0;
+}  
+
+--Q6.
+
+   #include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5;
+
+    for (int i = 1; i <= n; i++) {
+
+        for (int j = 1; j <= i; j++) {
+            cout << j << " ";
+        } 
+        int spaces = 2 * (n - i);
+        for (int j = 1; j <= spaces; j++) {
+            cout << "? ";
+        }
+
+        for (int j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}  
+
+--Q7
+
+ #include <iostream>
+using namespace std;
+
+int main() {
+    int rows = 5;
+    int cols = 5;
+
+    for (int i = 1; i <= rows; i++) {
+        for (int j = 1; j <= cols; j++) {
+
+            if (
+                j == 1 ||                          
+                (i == 1) ||                        
+                (i == 3) ||                       
+                (j == cols && i == 2)             
+            ) {
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+   
+
